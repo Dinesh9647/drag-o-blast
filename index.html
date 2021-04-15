@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>drag-o-blast</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+        <link rel=stylesheet href="style.css">
+    </head>
+    <body>
+        <canvas></canvas>
+        <div id = "stars"></div>
+        <div id = "twinkling"></div>
+        <div id = "clouds"></div>
+        <div id = "score">Score: 0</div>
+        <div id = "game_menu">
+            <div id = "curr_score">
+                <h1>Score</h1>
+                <h1 id = "final_score">0</h1>
+            </div>
+            <div id = "max_score">
+                <h1>High Score</h1>
+                <h1 id = "high_score">0</h1>
+            </div>
+            <div id="playButton">
+                <button id="startButton">Play</button>
+            </div>
+        </div>
+        <script src = "js/characters.js"></script>
+        <script src = "js/powerups.js"></script>
+        <script src = "js/shield.js"></script>
+        <script src = "js/control.js"></script>
+        <script src = "js/setup.js"></script>
+        <script src = "js/animation.js"></script>
+    </body>
+</html>
