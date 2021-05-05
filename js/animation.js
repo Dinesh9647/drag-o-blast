@@ -154,6 +154,7 @@ start_button.addEventListener("click", function() {
             // If shield mode is on then destroy all the enemies which touch the shield
             if(shield_on == true){
                 if(distance(enemies[i].x, enemies[i].y, player.x, player.y) < enemies[i].rad + out_shield.rad - 2.7) {
+                    burst_sound.currentTime = 0;
                     burst_sound.play();
                     Score += parseInt(enemies[i].rad);
                     if(Score != 0 && Score % 6000 == 0) {
@@ -241,6 +242,7 @@ start_button.addEventListener("click", function() {
                         enemies[i].rad -= 0.6;
 
                         if(enemies[i].rad <= 25) {
+                            burst_sound.currentTime = 0;
                             burst_sound.play();
                             enemies.splice(i, 1);
                             projectiles.splice(j, 1);
