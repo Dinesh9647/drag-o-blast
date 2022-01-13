@@ -63,6 +63,7 @@ start_button.addEventListener("click", function() {
 
         player.draw();
 
+        // Draw and update the burst particles
         particles.forEach((particle, idx) => {
             if(particle.alpha <= 0) {
                 particles.splice(idx, 1);
@@ -78,7 +79,6 @@ start_button.addEventListener("click", function() {
             interval = 0;
         }
 
-        // Draw and update the burst particles
         projectiles.forEach((projectile, idx) => {
             projectile.update();
             projectile.x = player.x;
